@@ -1,0 +1,28 @@
+.cupom {
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+}
+.cupom h2 {
+    color: rgb(0, 51, 198);
+    font-size: 30px;
+}
+.cupomlink {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    flex-direction: row;
+    width: 100%;
+    //background-color: red;
+}
+.cupomlink-item{
+    width: 215px;
+    height: 97px;
+    transition: transform 0.5s ease;
+}
+.cupomlink-item:hover{
+    transform: scale(0.98);
+}
+@import 'media';

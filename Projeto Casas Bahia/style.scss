@@ -1,0 +1,246 @@
+@import "header.scss","teste.scss", "produtos.scss", "button.scss", "final.scss";
+
+@font-face {
+    font-family: '';
+    src: url(assets/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+    overflow-x:hidden;
+    font-family:  "Nunito", sans-serif;
+    
+}
+.gifstart{
+    display: flex;
+    width: 100%;
+    height: 51px;
+}
+.gifstart img{
+    width: 100%;
+    height: auto;
+}
+
+.conteinerlownovo {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 51, 190);
+    overflow: hidden;
+}
+
+
+.deuerro {
+    display: flex;
+    gap: 2.9px;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    transition: transform 0.5s ease;
+    will-change: transform;
+    
+
+}
+
+.conteineritem {
+    flex: 0 0 11%; /* Ajusta a largura dos itens para garantir que a quantidade de itens visíveis seja 5 */
+    box-sizing: border-box;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bola {
+    display:flex;    
+    align-items: center;
+    justify-content: center;
+    height: 68px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bola:hover{
+    background-color: rgb(128, 128, 190); 
+}
+.bola img{
+    filter: invert(1);
+    height: 95%;
+    width: 95%;
+}
+
+.bola-text{
+    color:white;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+.test{
+    display: flex;
+    width: auto;
+    margin: 0 10px;
+    height: 100px;
+    margin-top: -26px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.containercarrossel{
+    display: flex;
+    width: 100%;
+    height: 420px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 51, 190); 
+    position: relative; 
+}
+
+.teste2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    //overflow: hidden;
+}
+.conteiner{
+    display:flex;
+    //overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    //width: 100%;
+    width: calc(100% * 7);
+    gap:15px;
+    height: 345px;
+    transition: transform 1s ease;
+}
+.conteiner-box{ /*carrossel*/
+    flex: 0 0 100%;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px groove white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(247, 244, 244, 0.5);
+    transition: transform 0.5s ease, box-shadow 1ms ease; 
+    width: 396px;
+    max-width: unset;
+    height: 345px;
+    overflow: hidden;
+}
+.conteiner-box:hover {
+    transform:scale(0.98); 
+}
+.conteiner-img{
+    display: block;
+    //flex-wrap: wrap;
+    //max-inline-size: 300px;
+    width: 100%;
+    height: 100%; /*editar center*/
+}
+@import 'media';
+.anuncio{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 530px; 
+    margin:50px auto;
+}
+.anuncio-box{
+    display:flex;
+    width: auto;
+    height: auto;
+    //background-color: red;
+}
+.anuncio-box a{
+    padding: 0;
+}
+
+.anunciobanner-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin:50px;
+}
+
+.banners{
+    display: flex;
+    justify-content: space-around;
+    //flex-direction: row;
+    width: 100%;
+    height: 350px;
+    //padding:20px;
+    margin-right: 10px;
+   
+
+}
+.banners-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.banners-box img{
+    width: 200px;
+    height: 300px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(231, 231, 231);
+    gap:100px;
+}
+.rodape h3{
+    font-size: 12px;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    color: blue;
+}
+.rodape span{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(87, 87, 87);
+}
+.rodape span:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape span:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anuncio2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+
