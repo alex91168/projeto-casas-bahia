@@ -14,8 +14,8 @@ Tecnologias utilizadas:
 
 Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
-࿔ HTML;
-࿔ Sass;
-࿔ JavaScript;
+- HTML;
+- Sass;
+- JavaScript;
 
 ---
