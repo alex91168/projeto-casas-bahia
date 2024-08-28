@@ -6,20 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const itemWidth = items[0].offsetWidth + parseInt(window.getComputedStyle(items[0]).marginRight);
     const totalItems = items.length;
-    const itemsPerPage = 9; // Número de itens visíveis por vez
-    const totalPages = Math.ceil(totalItems/itemsPerPage); //math.ceil é utilizado para arredondar para cima o número de totalpages
+    const itemsPerPage = 9; 
+    const totalPages = Math.ceil(totalItems/itemsPerPage); 
     const autoplayInterval = 5000;
 
     let currentPage = 0;
 
     function showSlide(index) {
-        // Calcula o deslocamento
         const offset = index * itemsPerPage * itemWidth;
-
-        // Aplica a transformação para mostrar os itens corretos
         carrossel.style.transform = `translateX(-${offset}px)`;
-
-        // Atualiza a página atual
         currentPage = index;
     }
 
@@ -27,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentPage > 0) {
             showSlide(currentPage - 1);
         } else {
-            showSlide(totalPages - 1); // Loop para o final
+            showSlide(totalPages - 1); 
         }
     });
 
@@ -35,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentPage < totalPages - 1) {
             showSlide(currentPage + 1);
         } else {
-            showSlide(0); // Loop para o início
+            showSlide(0); 
         }
     });
 
@@ -44,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentPage < totalPages - 1) {
             showSlide(currentPage + 1);
         } else {
-            showSlide(0); // Loop para o início
+            showSlide(0); 
         }
     }
 
@@ -56,6 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
             showSlide(0);
         }
     }
-    //setInterval(autoSlide, autoplayInterval); ativar slide
+    setInterval(autoSlide, autoplayInterval); ativar slide
     showSlide(currentPage);
 });
