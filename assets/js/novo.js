@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalItems = items.length;
     const itemsPerPage = 9; 
     const totalPages = Math.ceil(totalItems/itemsPerPage); 
-    const autoplayInterval = 5000;
+    const autoplayInterval = 4000;
 
     let currentPage = 0;
 
